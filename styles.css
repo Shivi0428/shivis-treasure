@@ -1,10 +1,14 @@
 body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
-    margin: 0;
-    padding: 0;
-    background-color: #f4f4f4;
+  background-color: #20bebe;
+  color: #fff;
+  font-family: Arial, sans-serif;
 }
+.navbar {
+  background-color: #20bebe !important;
+}
+/* Add more styles as needed */
+
+
 header {
     background: #333;
     color: #fff;
