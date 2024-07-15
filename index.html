@@ -8,6 +8,18 @@
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
   <!-- Custom CSS -->
   <link rel="stylesheet" href="styles.css">
+  <!-- Custom Inline CSS -->
+  <style>
+    body {
+      font-family: Calibri, sans-serif;
+    }
+    .lighter-text {
+      color: #888888; /* Darker than light grey but lighter than headings */
+    }
+    .carousel-item img {
+      margin: auto;
+    }
+  </style>
 </head>
 <body>
   <!-- Navigation Bar -->
@@ -39,39 +51,36 @@
   </nav>
 
   <!-- About Me Section -->
-  <section id="about" class="bg-dark">
+  <section id="about" class="bg-dark text-light">
     <div class="container py-5">
       <div class="row">
         <div class="col-md-6">
           <h2>About Me</h2>
           <p>In the realm of data analysis, I specialize in managing and analyzing large data sets using advanced metadata techniques. I leverage Business Intelligence (BI) tools like Microsoft Power BI, utilizing DAX for complex calculations and SQL for efficient query writing to generate insightful reports.</p>
           <p>As a Full Stack Developer, I have managed Django projects, developing robust web applications and ensuring seamless integration with data analytics tools.</p>
-          <p>Working in mu current company has honed my ability to adapt and excel in multiple roles, including problem-solving, working autonomously, and maintaining performance under pressure.</p>
+          <p>Working in my current company has honed my ability to adapt and excel in multiple roles, including problem-solving, working autonomously, and maintaining performance under pressure.</p>
         </div>
         <div class="col-md-6">
-          <!-- Placeholder Image -->
-          <!--<img src="https://via.placeholder.com/400x300" class="img-fluid rounded" alt="Django Developer Image">-->
-          <img src="images/Shivi.png" class="img-fluid rounded" alt="Django Developer Image" style="max-width: 200px; height: auto;>
-
+          <img src="images/Shivi.png" class="img-fluid rounded" alt="Django Developer Image" style="max-width: 200px; height: auto;">
         </div>
       </div>
     </div>
   </section>
 
   <!-- Skills Section -->
-  <section id="skills" class="bg-dark">
+  <section id="skills" class="bg-dark text-light">
     <div class="container py-5">
       <h2 class="text-center mb-4">Technical Skills</h2>
       <div class="row">
         <div class="col-md-6">
           <h4>Programming Languages</h4>
-          <ul>
+          <ul class="lighter-text">
             <li>Python, C, C++, Visual Basic</li>
           </ul>
         </div>
         <div class="col-md-6">
           <h4>Data Analytics & Visualization</h4>
-          <ul>
+          <ul class="lighter-text">
             <li>NumPy, Pandas, Scikit-Learn</li>
             <li>Power BI, Tableau, Matplotlib, Plotly</li>
           </ul>
@@ -81,14 +90,14 @@
   </section>
 
   <!-- Work Experience Section -->
-  <section id="experience" class="bg-dark">
+  <section id="experience" class="bg-dark text-light">
     <div class="container py-5">
       <h2 class="text-center mb-4">Work Experience</h2>
       <div class="card mb-3">
-        <div class="card-body">
+        <div class="card-body bg-secondary text-white">
           <h5 class="card-title">Data Analyst & Software Engineer at Radia Computer Services Limited</h5>
           <p class="card-text">Designed and developed robust e-commerce websites using Django, tailored to meet specific client needs.</p>
-          <p><a href="https://github.com/Shivi0428/backup-googledrive" target="_blank">GitHub Repository: backup-googledrive</a></p>
+          <p><a href="https://github.com/Shivi0428/backup-googledrive" target="_blank" class="text-white">GitHub Repository: backup-googledrive</a></p>
         </div>
       </div>
       <!-- Add more work experience sections -->
@@ -96,30 +105,53 @@
   </section>
 
   <!-- Projects Section -->
-  <section id="projects" class="bg-dark">
+  <section id="projects" class="bg-dark text-light">
     <div class="container py-5">
       <h2 class="text-center mb-4">Data Analysis Projects</h2>
-      <ul>
-        <li>Comparative Analysis of Investment Decisions: GitHub Repository - <a href="https://github.com/Shivi0428/stock-market-forecasting" target="_blank">Stock Market Forecasting</a></li>
+      <ul class="lighter-text">
+        <li>Comparative Analysis of Investment Decisions: GitHub Repository - <a href="https://github.com/Shivi0428/stock-market-forecasting" target="_blank" class="text-white">Stock Market Forecasting</a></li>
         <!-- Add more project details -->
       </ul>
     </div>
   </section>
 
   <!-- Contact Section -->
-  <section id="contact" class="bg-dark">
+  <section id="contact" class="bg-dark text-light">
     <div class="container py-5">
       <h2 class="text-center mb-4">Contact</h2>
-      <div class="row">
-        <div class="col-md-6">
-          <p>Email: savitapanwar0428@gmail.com</p>
-          <p>Phone: +44 7407682542</p>
+      <div id="contactCarousel" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="row">
+              <div class="col-md-6">
+                <p>Email: savitapanwar0428@gmail.com</p>
+                <p>Phone: +44 7407682542</p>
+              </div>
+              <div class="col-md-6">
+                <img src="images/logo.png" class="img-fluid rounded" alt="Contact Image" style="max-width: 100px; height: auto;">
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="row">
+              <div class="col-md-6">
+                <p>LinkedIn: <a href="https://www.linkedin.com/in/savitapanwar" target="_blank" class="text-white">linkedin.com/in/savitapanwar</a></p>
+                <p>GitHub: <a href="https://github.com/Shivi0428" target="_blank" class="text-white">github.com/Shivi0428</a></p>
+              </div>
+              <div class="col-md-6">
+                <img src="images/logo.png" class="img-fluid rounded" alt="Contact Image" style="max-width: 100px; height: auto;">
+              </div>
+            </div>
+          </div>
         </div>
-        <div class="col-md-6">
-          <!-- Placeholder Image -->
-          <!--<img src="https://via.placeholder.com/400x300" class="img-fluid rounded" alt="Django Developer Image">-->
-          <img src="images/logo.png" class="img-fluid rounded" alt="Contact Image" style="max-width: 100px; height: auto;>
-        </div>
+        <a class="carousel-control-prev" href="#contactCarousel" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#contactCarousel" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
       </div>
     </div>
   </section>
@@ -130,6 +162,8 @@
   </footer>
 
   <!-- Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-eMN1H2wbwi5G17GpGuex10d7hON9w1lN8Gc1RytbW7m/NbG0fu6kExlP/uePBszb" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-o+RDsa0aLu++PJvFqy8fFScvbHFLtbvScb8AjopnFD+iEQ7wo/CG0xlczd+2O/em" crossorigin="anonymous"></script>
 </body>
 </html>
